@@ -6,10 +6,50 @@ output:
     vertical_layout: fill
 ---
 
+<style>
+  @font-face {
+    font-family:'BYekan';/*تعریف یک نام برای فونت*/
+    src:url('BYekan.eot');/*اکسپلورر 9 به بعد*/
+    src:local('bYekan'),/*بررسی نصب بودن فونت در سیستم کاربر*/
+        local('b Yekan'),/*برای برخی از مرورگرها مانند سافاری*/
+        url('BYekan.eot?#iefix') format('embedded-opentype'),/*هک برای اکسپلورر 8 و ماقبل*/
+        url('BYekan.woff') format('woff'),/*مرورگر های جدید*/
+        url('BYekan.ttf') format('truetype'),/*تمام مرورگرها به جزء اکسپلورر*/
+        url('BYekan.svg#BYekan') format('svg');/*نسخه های قدیمی سیستم عامل iOS*/
+    font-style:normal;
+    font-weight:normal;
+  }
+  body {
+    font-family:BYekan;
+  }
+  @media (min-width: 768px) {
+    .navbar-header {
+      float: right !important;
+      direction: rtl !important;
+    }
+    .navbar-nav>li {
+      float: right !important;
+      direction: rtl !important;
+    }
+    .navbar-left {
+      float: right !important;
+    }
+  }
+  .chart-title {
+    direction: rtl !important;
+  }
+  .fa {
+    margin-right: 0px !important;
+    margin-left: 7px !important;
+  }
+</style>
+
 ```{r setup, include=FALSE}
 library(flexdashboard)
 ```
 
+صفحه اصلی {data-icon="fa-inbox"}
+=====================================
 Column {data-width=650}
 -----------------------------------------------------------------------
 
@@ -30,7 +70,10 @@ Column {data-width=350}
 
 ### Chart C
 
-```{r}
+![](../asset/images/economy-english.jpg)
 
-```
+رشد اقتصادی (Economic growth) {data-icon="fa-line-chart"}
+===
 
+تولید ناخالص (Gross production) {data-icon="fa-money"}
+===
