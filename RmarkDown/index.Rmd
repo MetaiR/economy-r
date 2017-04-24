@@ -49,6 +49,12 @@ output:
   p {
     font-size: 14px;
   }
+  #column-mycolumn-withimage > div > div > div {
+    background: url(../asset/images/economy-english.jpg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
 </style>
 
 ```{r setup, include=FALSE}
@@ -65,12 +71,11 @@ Column {data-width=35%}
 
 ### فهرست مطالب
 
-Column {data-width=65%}
+Column {mycolumn-withImage} {data-width=65%}
 -----------------------------------------------------------------------
 
 ###
 
-![](../asset/images/economy-english.jpg)
 
 رشد اقتصادی (Economic growth) {data-icon="fa-line-chart"}
 ===
