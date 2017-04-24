@@ -37,10 +37,17 @@ output:
   }
   .chart-title {
     direction: rtl !important;
+    font-size: 18px;
   }
   .fa {
     margin-right: 0px !important;
     margin-left: 7px !important;
+  }
+  .desktop-layout {
+    direction: rtl;
+  }
+  p {
+    font-size: 14px;
   }
 </style>
 
@@ -50,25 +57,18 @@ library(flexdashboard)
 
 صفحه اصلی {data-icon="fa-inbox"}
 =====================================
-Column {data-width=650}
+Column {data-width=35%}
+-----------------------------------------------------------------------
+### **درباره پروژه**
+
+سلام این یک تست می باشد
+
+### فهرست مطالب
+
+Column {data-width=65%}
 -----------------------------------------------------------------------
 
-### Chart A
-
-```{r}
-
-```
-
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
-
-```
-
-### Chart C
+###
 
 ![](../asset/images/economy-english.jpg)
 
